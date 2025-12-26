@@ -1,4 +1,5 @@
 Project Overview:
+
 This Java Web Application allows users to manage student profiles stored in a database. Users can fill out a form with personal information, which is processed by a Servlet and saved to the database, then displayed dynamically on a JSP page. This project demonstrates the Servlet-JSP MVC architecture with database integration.
 
 Features:
