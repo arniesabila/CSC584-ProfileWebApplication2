@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+
+    <!-- MDB Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+      rel="stylesheet"
+    />
+<style>
+
+    /* Submit button gradient */
+    .gradient-custom-4 { 
+        background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1),
+            rgba(128, 0, 128, 1)
+        );
+        color: #fff !important;
+    }
+
+</style>
+
+
+</head>
+
+<body>
+    <section class="vh-100 bg-image"
+        style="background-image: url('assets/img/header-bg.jpg');">
+
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+            <div class="container h-100">
+
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body p-5">
+
+                                <h2 class="text-uppercase text-center mb-5">PERSONAL INFORMATION</h2>
+
+                                <form action="ProfileServlet" method="post">
+
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="name" name="name" class="form-control form-control-lg" required />
+                                        <label class="form-label" for="name">Your Name</label>
+                                    </div>
+                                    
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="studentID" name="studentID" class="form-control form-control-lg" required/>
+                                        <label class="form-label" for="studentID">Your Student ID</label>
+                                    </div>
+                                    
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="program" name="program" class="form-control form-control-lg" required/>
+                                        <label class="form-label" for="program">Your Program</label>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="email" name="email" class="form-control form-control-lg" required/>
+                                        <label class="form-label" for="email">Your Email</label>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="hobbies" name="hobbies" class="form-control form-control-lg"/>
+                                        <label class="form-label" for="hobbies">Hobbies</label>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="intro" name="intro" class="form-control form-control-lg" />
+                                        <label class="form-label" for="intro">Short Introduction</label>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-block btn-lg gradient-custom-4 text-white border-0">
+                                              Submit
+                                        </button>
+                                    </div>
+
+                                   <p class="text-center text-muted mt-5 mb-0">
+                                    Back to welcome page?
+                                    <a href=index.html class="fw-bold text-body"><u>Click here</u></a>
+</p>
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- MDB Bootstrap JS -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+    ></script>
+</body>
+</html>

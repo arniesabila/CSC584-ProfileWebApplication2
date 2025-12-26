@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portfolio</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Background section */
+        .hero-section {
+            height: 100vh;
+            background-image: url('assets/img/header-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        /* Dark overlay */
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.45);
+        }
+
+        /* Text */
+        .masthead-subheading,
+        .masthead-heading {
+            position: relative;
+            z-index: 2;
+        }
+
+        .masthead-subheading {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .masthead-heading {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+
+        /* Gradient Purple Button */
+        .btn-purple {
+            position: relative;
+            z-index: 2;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            color: #fff;
+            border: none;
+            background: linear-gradient(to right, #7b2ff7,#43e8d8);
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+
+        .btn-purple:hover {
+            background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1),
+            rgba(128, 0, 128, 1)
+        );;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero-section">
+        <div>
+            <div class="masthead-subheading">Welcome to portfolio!</div>
+            <div class="masthead-heading">It's Nice To Meet You</div>
+
+            <a class="btn btn-purple text-uppercase" href="form.html">
+                Add Personal Information
+            </a>
+            
+            <a class="btn btn-purple text-uppercase" href="viewProfiles">
+                Display All Profiles List
+            </a>
+            
+        </div>
+    </section>
+
+</body>
+</html>
